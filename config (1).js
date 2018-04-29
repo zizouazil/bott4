@@ -1,4 +1,4 @@
-exports.TOKEN = 'NDE0NDAzNzc4NDY1MjM0OTU0.DX2lqg.wsc26uXBdQBtgu7_nNu7oEOv-KY'; // ya wr3 la tns5
+exports.TOKEN = (process.env.token); // ya wr3 la tns5
 
 exports.PREFIX = '*';
 
