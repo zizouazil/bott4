@@ -271,6 +271,6 @@ msg.author.send("Commands Music " + `  **
 
 
 
+client.login(process.env.token);
 
 
-client.login("token");
