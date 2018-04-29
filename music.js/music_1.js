@@ -273,4 +273,4 @@ msg.author.send("Commands Music " + `  **
 
 
 
-client.login("token");
+client.login("NDM5NDI3OTIyNTgzODc5Njkw.DcTDwA.pPF_pyMlFvXFWcNFZCTK3KMR7I8");
