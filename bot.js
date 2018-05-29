@@ -14,11 +14,12 @@ const PREFIX = '/';
 const youtube = new YouTube(GOOGLE_API_KEY);
 
 const queue = new Map();
-client.on('ready', () => {
-     client.user.setActivity("l ferda kch kch",{type: 'LISTENING'});
-
-
+client.on('ready', function() {
+	console.log(`i am ready ${client.user.username}`);
+    client.user.setGame(prefix + 'help || play ');
 });
+
+
 
 client.on('warn', console.warn);
 
