@@ -248,19 +248,47 @@ if (message.content.startsWith(PREFIX + 'setavatar')) {
 }
 });
 
-var prefix = '/';
+
+client.on('message', message => {
+ if (true) {
+if (message.content === 'Rinvite') {
+     message.author.send(' ✿Rihana Link✿| https://discordapp.com/api/oauth2/authorize?client_id=464863655003947008&permissions=8&scope=bot ').catch(e => console.log(e.stack));
+
+   }
+  } 
+ });
+ 
+ 
+
+client.on('message', message => {
+    if (message.content === "Rinvite") {
+    let embed = new Discord.RichEmbed()
+ .setAuthor(message.author.username)
+ .setColor("#9B59B6")
+ .addField(" Done " , " |  Send to PM")
+    
+    
+    
+ message.channel.sendEmbed(embed);
+   }
+});
+
+var prefix = 'R';
 
 client.on('message', msg => {
 	if (msg.content.startsWith(prefix + 'help')) {
 msg.author.send("Commands ستاتي " + `  **
 
-   "  : الاوامر "
-:headphones:  ${prefix}play |اسم لاغنيه / رابط الاغنية
-:headphones:  ${prefix}skipللإنتقاال الى الاغنيه التاليه (\اذا كان هناك بقائمة الانتظار\
-:headphones:  ${prefix}stop|لأيقاف الموسيقى
-:headphones:  ${prefix}volume |لتغير حجم الصوت
-:headphones:  ${prefix}np | لإقاف الموسيقى مؤقتا
-:headphones:  ${prefix}resume |لاعادت تشغيل الاغنية الموجودة
+   "  : اوامر ريهانا "
+:headphones:  ${prefix}play |->اسم لاغنيه / رابط الاغنية
+:headphones:  ${prefix}skip ->للإنتقاال الى الاغنيه التاليه (\اذا كان هناك بقائمة الانتظار\
+:headphones:  ${prefix}stop|->لأيقاف الموسيقى
+:headphones:  ${prefix}volume |->لتغير حجم الصوت
+:headphones:  ${prefix}np |-> لإقاف الموسيقى مؤقتا
+:headphones:  ${prefix}resume |->لاعادت تشغيل الاغنية الموجودة
+
+
+:headphones:  ${prefix}invite | ->لدعوة البوت ريهانا 
 **`);
  }
 });
