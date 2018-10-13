@@ -247,7 +247,7 @@ if (message.content.startsWith(PREFIX + 'setavatar')) {
 client.on('message', message => {
  if (true) {
 if (message.content === 'Rinvite') {
-     message.author.send(' ✿Rihana Link✿| https://discordapp.com/api/oauth2/authorize?client_id=464863655003947008&permissions=8&scope=bot ').catch(e => console.log(e.stack));
+     message.author.send(' ✿Rihana Link✿| https://discordapp.com/api/oauth2/authorize?client_id=500710815519866881&permissions=8&scope=bot ').catch(e => console.log(e.stack));
 
    }
   } 
