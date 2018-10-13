@@ -19,11 +19,6 @@ client.on('ready', function() {
     client.user.setGame(prefix + 'help');
 });
 
- client.on('ready', () => {
-		  client.user.setActivity('Rihaaaaaana Music|Rhelp', {type: 'WATCHING'});
-
-});
-
 
 client.on('warn', console.warn);
 
@@ -258,6 +253,11 @@ if (message.content === 'Rinvite') {
   } 
  });
  
+client.on('ready', () => {
+		  client.user.setActivity('Rihaaaaaana Music|Rhelp', {type: 'WATCHING'});
+
+});
+
  
 
 client.on('message', message => {
