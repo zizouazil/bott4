@@ -16,9 +16,13 @@ const youtube = new YouTube(GOOGLE_API_KEY);
 const queue = new Map();
 client.on('ready', function() {
 	console.log(`i am ready ${client.user.username}`);
-    client.user.setGame(prefix + 'help || play ');
+    client.user.setGame(prefix + 'help');
 });
 
+ client.on('ready', () => {
+		  client.user.setActivity('Rihaaaaaana Music|Rhelp', {type: 'WATCHING'});
+
+});
 
 
 client.on('warn', console.warn);
