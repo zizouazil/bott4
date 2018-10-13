@@ -253,10 +253,7 @@ if (message.content === 'Rinvite') {
   } 
  });
  
-client.on('ready', () => {
-		  client.user.setActivity('Rihaaaaaana Music|Rhelp', {type: 'WATCHING'});
 
-});
 
  
 
